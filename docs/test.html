@@ -30,6 +30,9 @@
 
 
                 <input class='border border-gray-800' type='number'/>
+                <input id='num-2' class='border border-gray-800' type='number'/>
+
+
                 <input class='border border-gray-800' pattern="[0-9]*"/>
                 <input class='border border-gray-800' inputmode="numeric"/>
                 <button class='border border-gray-800' type='submit'>Submit</button>
@@ -46,5 +49,17 @@
 <style>
 body {
     font-family: 'Inter', sans-serif;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input#num-2::-webkit-outer-spin-button,
+input#num-2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input#num-2[type=number] {
+  -moz-appearance: textfield;
 }
 </style>
